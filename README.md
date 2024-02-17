@@ -3,7 +3,7 @@ Deploying a Joplin Server using Podman and Quadlet
 
 ## Dependencies:
 
-* Podman v4.4 or higher (Quadlet is included as of this version)
+* Podman v5.0 or higher (Quadlet with pod support is included as of this version)
 * Nginx
 
 ## Installation:
@@ -14,10 +14,9 @@ Quadlet supports these unit file types:
 * **.kube**: Used to manage containers defined in Kubernetes YAML files by running podman kube play
 * **.network**: Used to create Podman networks that may be referenced in .container or .kube files
 * **.volume**: Used to create Podman volumes that may be referenced in .container files.
+* **.pod**: Starting with podman v5.0, used to manage pods by running podman pod 
 
-For the Joplin Server we only provide **.container**, **.network** and **.volume** files. Everything you need is under the `systemd/` directory.
-
-<img src="screenshots/systemd.png" />
+For the Joplin Server we provide **.pod**, **.container**, and **.volume** files. Everything you need is under the `systemd/` directory.
 
 ## Setup VM
 Choose your preferred VM provider - whether you prefer Linode, Digital Ocean, AWS, GCP, Azure, etc.
