@@ -32,7 +32,7 @@ Set up the environment.
 ```
 sudo apt install nginx certbot python3-certbot-nginx -y
 
-git clone https://github.com/danvergara/joplin.git
+git clone https://github.com/strzinek/joplin-pod.git
 
 cd joplin
 ```

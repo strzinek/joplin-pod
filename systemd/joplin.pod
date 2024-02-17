@@ -1,3 +1,6 @@
+[Install]
+WantedBy=default.target
+
 [Pod]
 PodName=Joplin
 PublishPort=22300:22300
