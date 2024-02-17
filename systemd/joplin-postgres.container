@@ -1,12 +1,12 @@
 [Install]
 WantedBy=default.target
-WantedBy=joplin-server.service
 
 [Container]
+Pod=Joplin
 Image=docker.io/library/postgres:15
 ContainerName=joplin-postgres
+AutoUpdate=registry
 Volume=joplin.volume:/var/lib/postgresql/data
-Network=joplin.network
 Environment=POSTGRES_PASSWORD=postgres
 Environment=POSTGRES_USER=postgres
 Environment=POSTGRES_DB=joplin

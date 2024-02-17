@@ -2,11 +2,10 @@
 WantedBy=default.target
 
 [Container]
+Pod=Joplin
 Image=docker.io/joplin/server:latest
 ContainerName=joplin-server
-Network=joplin.network
 AutoUpdate=registry
-PublishPort=22300:22300
 Environment=APP_BASE_URL=https://notes.danvergara.com
 Environment=APP_PORT=22300
 Environment=DB_CLIENT=pg
