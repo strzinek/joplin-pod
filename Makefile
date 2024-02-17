@@ -1,5 +1,5 @@
 .PHONY: quadlet-dry-run
-## rm-systemd: Run quadlet executable in dry-run mode 
+## quadlet-dry-run: Run quadlet executable in dry-run mode 
 quadlet-dry-run:
 	/usr/libexec/podman/quadlet --dryrun --user
 
@@ -21,7 +21,7 @@ reload:
 .PHONY: start
 ## start: start the joplin service
 start:
-	systemctl --user start joplin-server.service
+	systemctl --user start joplin.service
 
 .PHONY: help
 ## help: Prints this help message
